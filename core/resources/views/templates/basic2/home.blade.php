@@ -228,9 +228,7 @@
         <div class="col-auto">
             <section class="de">
                 <div class="de__heading">Khám phá sự kiện</div>
-
                 <div class="w-full"></div>
-                
                 <ul class="tabs" show-line="true" data-toggle="tab" data-target="#top-event">
                     <li class="tabs__item active">Hàng đầu</li>
                     <li class="tabs__item">Sắp diễn ra</li>
