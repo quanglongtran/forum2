@@ -227,7 +227,7 @@
     <div class="row">
         <div class="col-auto">
             <section class="de">
-                {{-- kham pha su kien --}}
+                {{-- kham pha su kien 111111111111111111111--}}
                 <div class="de__heading">Khám phá sự kiện</div>
                 <div class="w-full"></div>
                 <ul class="tabs" show-line="true" data-toggle="tab" data-target="#top-event">
