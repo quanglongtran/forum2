@@ -1,0 +1,167 @@
+@media (max-width: 767px) {
+  .navbar-nav .nav-link.active::before,
+  .navbar-nav .nav-link:hover::before {
+    display: none !important;
+  }
+  .navbar-collapse {
+    background-color: #e1edf5;
+    margin-left: auto;
+    margin-top: 0 !important;
+  }
+  
+  .header .site-logo img {
+    max-height: 80px;
+  }
+
+  .navbar-toggler,
+  .header-search-open-btn {
+    padding: 0;
+    border: none;
+    background: #2c67dc;
+    padding: 3px 5px;
+    width: 40px;
+    height: 40px;
+    border-radius: 4px;
+  }
+  .menu-toggle {
+    max-width: 100%;
+    height: 15px;
+  }
+  .header-search-open-btn {
+    margin-right: 12px;
+  }
+  .header-search-form.header-search-form-mobile.active {
+    top: 80px;
+  }
+
+  .header .main-menu li a {
+    color: rgba(0, 0, 0, 0.5);
+  }
+  .header .main-menu li a:hover,
+  .header .main-menu li a:focus {
+    color: #101828 !important;
+  }
+
+  .banner-subtitle,
+  .banner-title p:last-child {
+    margin-top: 16px;
+  }
+
+  header .container {
+    padding: 0;
+  }
+
+  .d-flex.search-form {
+    width: calc(100% - 120px);
+    margin: 0;
+  }
+
+  .single-thread__left {
+    width: 100%;
+  }
+
+  .single-thread__right .top__list > li:nth-child(1),
+  .single-thread__right .top__list > li:nth-child(2) {
+    width: 50%;
+    margin-bottom: 16px;
+  }
+
+  .single-thread__right .top__list > li:nth-child(1) {
+    border-right: 1px solid #eaecf0;
+  }
+
+  #forums_home .sidebar-widget:first-child {
+    margin-top: 16px;
+  }
+
+  .title_block {
+    display: block;
+  }
+
+  .dl__container-header {
+    display: none;
+  }
+
+  .db__body-item {
+    display: grid;
+    height: auto;
+    align-items: start;
+  }
+
+  .db__body-item > * {
+    overflow: auto !important;
+  }
+
+  .db__body-item .statistics {
+    height: 48px;
+  }
+
+  .dl__container .statistics,
+  .dl__container .action,
+  .dl__container .created,
+  .dl__container .title {
+    max-width: 100%;
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+  }
+
+  .dl__container .title {
+    padding-left: 50px;
+    position: relative;
+  }
+
+  .db__body-item .created::before,
+  .db__body-item .title::before {
+    font-family: "Line Awesome Free";
+    font-weight: 900;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    line-height: 1;
+    content: "\f017";
+
+    font-size: 24px;
+    height: 41px;
+    width: 41px;
+    background: rgb(234, 236, 245);
+    border-radius: 21px;
+    text-align: center;
+    line-height: 41px;
+    margin-right: 12px;
+    z-index: 9;
+  }
+
+  .dl__container .title::before {
+    content: "\f036";
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .db__body-item {
+    padding: 12px;
+  }
+
+  .dl__container .action {
+    text-align: left;
+    margin-top: 5px;
+  }
+  .dl__container .action .icon {
+    height: 41px;
+    width: 41px;
+    background: rgb(234, 236, 245);
+    border-radius: 21px;
+    text-align: center;
+    line-height: 41px;
+    margin-right: 12px;
+  }
+
+  .title_block .readmore {
+    width: 100%;
+    text-align: right;
+    padding-top: 0;
+  }
+}

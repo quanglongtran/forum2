@@ -14,7 +14,7 @@ class SubCategory extends Model
     }
 
     public function post(){
-    	return $this->hasMany(Post::class, 'sub_category_id', 'id')->where('status', 1)->orderBy('id', 'ASC');
+    	return $this->hasMany(Post::class, 'sub_category_id', 'id')->where('status', 1)->orderBy('created_at', 'DESC');
     }
 
 }

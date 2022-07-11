@@ -227,6 +227,7 @@
     <div class="row">
         <div class="col-auto">
             <section class="de">
+                {{-- kham pha su kien 111111111111111111111--}}
                 <div class="de__heading">Khám phá sự kiện</div>
                 <div class="w-full"></div>
                 <ul class="tabs" show-line="true" data-toggle="tab" data-target="#top-event">
@@ -235,7 +236,7 @@
                     <li class="tabs__item">Tuần này</li>
                     <li class="tabs__item">Đang theo dõi</li>
                 </ul>
-
+                
                 <a href="#" class="readmore">
                     <span class="readmore__text">Xem thêm</span>
                     <img src="{{asset('assets/icon/angle-right.svg')}}" class="readmore__icon">

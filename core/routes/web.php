@@ -2,6 +2,9 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Forum\SiteController;
+use App\Models\Forum;
+use App\Models\SubCategory;
+use App\Models\Category;
 
 Route::get('/clear', function(){
     \Illuminate\Support\Facades\Artisan::call('optimize:clear');
@@ -321,8 +324,11 @@ Route::get('/forum', function() {
 Route::get('/{slug}', 'SiteController@pages')->name('pages');
 Route::get('/', 'SiteController@index')->name('home');
 
-Route::group([
-    'prefix' => 'forum'
-], function() {
-    Route::get('/', [SiteController::class, 'index']);
+Route::name('forum.')->prefix('forum')->group(function() {
+    Route::get('/', [SiteController::class, 'index'])->name('index');
+    Route::get('tin-tuc', [SiteController::class, 'view_dien_dan'])->name('dien-dan');
+    Route::get('thu-vien', [SiteController::class, 'view_thu_vien'])->name('thu-vien');
+    Route::get('su-kien', [SiteController::class, 'view_su_kien'])->name('su-kien');
+    Route::get('thanh-vien', [SiteController::class, 'view_thanh_vien'])->name('thanh-vien');
+    Route::get('test', [SiteController::class, 'test']);
 });

@@ -1,66 +1,61 @@
-{{-- <nav class="navbar navbar-expand-lg bg-light">
-  <div class="container">
-    <a class="navbar-brand" href="#"><img src="http://27.71.234.22/assets/images/logoIcon/logo.png" alt="logo" width="90px" height="76px"></a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <form class="d-flex search-form" role="search">
-      <input class="form-control me-2" type="search" placeholder="Nhập từ khóa tìm kiếm" aria-label="Nhập từ khóa tìm kiếm">
-    </form>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Diễn đàn</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Tin tức mới</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Thư viện</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Sự kiện</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Thành viên</a>
-        </li>
-      </ul>
-    </div>
-  </div>
-</nav> --}}
+<header class="header">
+  <div class="header__bottom px-xl-5">
+      <div class="container">
+          <nav class="navbar navbar-expand-xl p-0 align-items-center">
+              <a class="site-logo site-title navbar-brand" href="/html/">
+                  <img src="/assets/images/logoIcon/logo.png" style="width: 80px" alt="logo">
+              </a>
 
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <div class="container">
-    <a class="navbar-brand" href="#"><img src="http://27.71.234.22/assets/images/logoIcon/logo.png" alt="logo" height="auto" style="width: 80px"></a>
-    <form class="d-flex search-form" role="search">
-      <input class="form-control me-2" type="search" placeholder="Nhập từ khóa tìm kiếm" aria-label="Nhập từ khóa tìm kiếm">
-    </form>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Diễn đàn</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Tin tức mới</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Thư viện</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Sự kiện</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Thành viên</a>
-        </li>
-        <li class="line"></li>
-      </ul>
-    </div>
-    <a class="nav-link register" href="#">Đăng ký</a>
-    <div class="btn btn-primary login">Đăng nhập</div>
+              <button class="header-search-open-btn ms-auto">
+                  <i class="las la-search"></i>
+              </button>
+
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                  aria-expanded="true" aria-label="Toggle navigation">
+                  <span class="menu-toggle"></span>
+              </button>
+
+              <form class="header-search-form header-search-form-mobile"
+                  action="/search">
+                  <input type="text" name="title" placeholder="Nhập từ khóa..."
+                      class="header-search-form__input">
+                  <button type="submit" class="header-search-form__btn"><i class="las la-search"></i></button>
+              </form>
+              <div class="navbar-collapse mt-lg-0 mt-3 collapse show" id="navbarSupportedContent" style="">
+                  <div class="header-search-area">
+                      <form class="header-search-form" action="/search">
+                          <input type="text" name="title" placeholder="Nhập từ khóa..."
+                              class="header-search-form__input">
+                          <button type="submit" class="header-search-form__btn"><i
+                                  class="las la-search"></i></button>
+                      </form>
+                  </div>
+
+                  <ul class="navbar-nav main-menu">
+                      <li class="nav-item">
+                          <a class="nav-link active" aria-current="page" href="{{route('forum.index')}}">Diễn đàn</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="{{route('forum.dien-dan')}}">Tin tức mới</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="{{route('forum.thu-vien')}}">Thư viện</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="{{route('forum.su-kien')}}">Sự kiện</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="{{route('forum.thanh-vien')}}">Thành viên</a>
+                      </li>
+                  </ul>
+
+                  <div class="nav-right  ms-auto flex">
+                      <a class="nav-link register" href="#">Đăng ký</a>
+                      <div class="btn btn-primary login">Đăng nhập</div>
+                  </div>
+              </div>
+          </nav>
+      </div>
   </div>
-</nav>
+</header>
