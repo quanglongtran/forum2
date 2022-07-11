@@ -297,6 +297,7 @@ class SiteController extends Controller
                      ->paginate(getPaginate());
 
         $pageTitle = 'All Posts';
+        // return $posts;
         return view($this->activeTemplate.'post',compact('pageTitle','posts'));
     }
 

@@ -459,6 +459,7 @@ class UserController extends Controller
         $new->status = $approve;
         $new->image = $image;
         $new->video = $request->video;
+        $new->type = $request->type;
         $new->save();
 
         $adminNotification = new AdminNotification();
