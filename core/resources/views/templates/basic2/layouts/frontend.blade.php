@@ -127,7 +127,7 @@
                     "use strict";
 
                     $(".langSel").on("change", function() {
-                        window.location.href = "{{route('home')}}/change/"+$(this).val() ;
+                        window.location.href = "{{route('forum.index')}}/change/"+$(this).val() ;
                     });
 
                     $('.ajaxCount').on('click',function(){

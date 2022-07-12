@@ -37,7 +37,7 @@
                           <a class="nav-link active" aria-current="page" href="{{route('forum.index')}}">Diễn đàn</a>
                       </li>
                       <li class="nav-item">
-                          <a class="nav-link" href="{{route('forum.dien-dan')}}">Tin tức mới</a>
+                          <a class="nav-link" href="{{route('forum.tin-tuc')}}">Tin tức mới</a>
                       </li>
                       <li class="nav-item">
                           <a class="nav-link" href="{{route('forum.thu-vien')}}">Thư viện</a>

@@ -191,7 +191,7 @@ class SiteController extends Controller
                      ->latest()
                      ->paginate(getPaginate());
 
-        $pageTitle = 'Tous les messages dans '.$category->name;
+        $pageTitle = 'Tất cả bài đăng trong '.$category->name;
         return view($this->activeTemplate.'post',compact('pageTitle','posts'));
     }
 
