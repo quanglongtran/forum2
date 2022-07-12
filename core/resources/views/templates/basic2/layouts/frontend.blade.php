@@ -9,6 +9,8 @@
     @include('partials.seo')
 
     <title>{{ $general->sitename(__($pageTitle)) }}</title>
+    <!-- jQuery library -->
+    <script src="{{ asset($activeTemplateTrue. 'js/lib/jquery-3.6.0.min.js') }}"></script>
 
     <!-- bootstrap 5  -->
     <link rel="stylesheet" href="{{ asset($activeTemplateTrue. 'css/lib/bootstrap.min.css') }}">
@@ -19,6 +21,7 @@
     <!-- main css -->
     <link rel="stylesheet" href="{{ asset($activeTemplateTrue. 'css/main.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/templates/basic2/css/main.css') }}">
+    <link rel="stylesheet" href="/assets/templates/basic2/css/main-mobile.css">
 
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700&family=Roboto:wght@100;300;400;500;700&display=swap');
@@ -95,8 +98,6 @@
                 {{-- </div><!-- main-wrapper end --> --}}
 
 
-            <!-- jQuery library -->
-            <script src="{{ asset($activeTemplateTrue. 'js/lib/jquery-3.6.0.min.js') }}"></script>
             <!-- bootstrap js -->
             <script src="{{ asset($activeTemplateTrue. 'js/lib/bootstrap.bundle.min.js') }}"></script>
             <!-- main js -->
@@ -126,7 +127,7 @@
                     "use strict";
 
                     $(".langSel").on("change", function() {
-                        window.location.href = "{{route('home')}}/change/"+$(this).val() ;
+                        window.location.href = "{{route('forum.index')}}/change/"+$(this).val() ;
                     });
 
                     $('.ajaxCount').on('click',function(){

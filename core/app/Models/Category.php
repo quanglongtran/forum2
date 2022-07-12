@@ -9,8 +9,8 @@ class Category extends Model
 {
     use HasFactory;
 
-    public function subCategory(){
-    	return $this->hasMany(SubCategory::class, 'category_id', 'id');
+    public function subCategory($status = '10'){
+    	return $this->hasMany(SubCategory::class, 'category_id', 'id')->where('status', '<>', $status);
     }
 
     public function forum(){
@@ -20,6 +20,5 @@ class Category extends Model
     public function topics(){
         return $this->hasManyThrough(Post::class, SubCategory::class);
     }
-
 
 }

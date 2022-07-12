@@ -39,6 +39,14 @@
                 <select class="js-example-tokenizer form--control select2-basic" name="tags[]" multiple="multiple"></select>
 
                 <div class="form-group col-lg-12">
+                  <label>@lang('Type')</label>
+                  <input type="type" name="type" class="form-control" autocomplete="off" list="type-list">
+                  <datalist id="type-list">
+                    <option value="Tin tức">
+                  </datalist>
+                </div>
+                
+                <div class="form-group col-lg-12">
                   <label>@lang('Image')</label>
                   <input type="file" name="image" class="form-control">
                 </div>

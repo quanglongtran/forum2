@@ -69,20 +69,8 @@ $(function () {
         }
     })
 
-    
 })
 
 function loaded() {
-    console.log(123)
-}
-
-window.onload = () => {
-    console.log(2)
-    document.getElementsByClassName('rn__body-thumbnail-img')[0].onload = function() {
-        console.log(123)
-    }
-    $('.rn__body-thumbnail-img').on('load', function () {
-        console.log(1)
-        $(this).parent().append('<div class="video-button"><img src="assets/icon/play-button.svg"></div>');
-    })
+    // console.log(123)
 }
